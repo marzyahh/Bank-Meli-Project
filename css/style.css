@@ -3,5 +3,28 @@
     --color-secondary: #2A6496;
     --color-accet: #ffbb00;
     --color-cards: #0054a2;
+    --color-cards-txt: #fff;
     --color-middle: #dc3c00;
+}
+html{
+    /* 62.5% of font size is 10px */
+    font-size: 62.5%;
+}
+body{
+    direction: rtl;
+    font-family: 'IranSans';
+}
+@font-face {
+    font-family:"IranSans" ;
+    src: url(./font/FontsFree-Net-ir_sans.ttf);
+}
+h3{
+    font-size: 2.4rem;
+}
+a, p{
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+h1,h2,h3,a{
+    color: var(--color-praimary);  
 }
