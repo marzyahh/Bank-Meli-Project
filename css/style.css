@@ -1,5 +1,6 @@
 :root{
     --color-praimary: #333;
+    --color-heading: rgb(83, 85, 92);
     --color-secondary: #2A6496;
     --color-accet: #ffbb00;
     --color-cards: #0054a2;
@@ -18,13 +19,19 @@ body{
     font-family:"IranSans" ;
     src: url(./font/FontsFree-Net-ir_sans.ttf);
 }
+*{
+   margin: 0;padding: 0;box-sizing: border-box; 
+}
 h3{
     font-size: 2.4rem;
 }
-a, p{
-    font-size: 1.3rem;
+a{
+    font-size: 1rem;
     text-decoration: none;
 }
 h1,h2,h3,a{
-    color: var(--color-praimary);  
+    color: var(--color-heading);  
+}
+ul{
+    list-style: none;
 }

@@ -1,0 +1,425 @@
+main {
+  width: 100%;
+  height: 100vh;
+  > header {
+    height: 100px;
+    // border: 1px solid red;
+    display: flex;
+    > .head {
+      width: 80%;
+      // border: 1px solid black;
+      height: 100%;
+      // margin-left: 47px;
+      > .top-header {
+        height: 60px;
+        width: 100%;
+        //  border: 2px solid green;
+        display: flex;
+        > * {
+          padding-top: 10px;
+        }
+        > .left {
+          width: 40%;
+          // border: 3px solid yellow;
+          > ul {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 1rem;
+            > li {
+              padding: 0 7px;
+              margin: 5px;
+              color: #db873d;
+              &:nth-of-type(3),
+              &:nth-of-type(4) {
+                border-right: 1px solid #db873d;
+              }
+              > a {
+                color: var(--color-accet);
+              }
+            }
+          }
+        }
+        > .middle {
+          margin: 0 60px;
+          padding: 0;
+        }
+        > .right {
+          width: 45%;
+          > .search {
+            display: flex;
+            > input {
+              width: 90%;
+              height: 27px;
+              margin-right: 20px;
+              padding-right: 10px;
+              position: relative;
+              border-radius: 5px;
+              outline: none;
+              border: 1px solid rgba(128, 128, 128, 0.612);
+              transition: 0.4s;
+              caret-color: rgba(70, 64, 64, 0.824);
+              &:hover {
+                // border: 2px solid var(--color-accet);
+                box-shadow: 0 0 7px var(--color-accet);
+              }
+            }
+            > i {
+              position: absolute;
+              right: 42%;
+              margin-top: 7px;
+              font-size: 15px;
+              color: var(--color-accet);
+            }
+          }
+        }
+      }
+      > .bottom-header {
+        // width: 100%;
+        // border: 1px solid blue;
+        height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        > .apps {
+          // width: 30%;
+          // border: 1px solid red;
+          display: flex;
+          // justify-content: flex-end;
+          // padding:0 60px;
+
+          > img {
+            padding: 7px;
+          }
+        }
+        > .titr {
+          width: 70%;
+          height: 40px;
+          > ul {
+            display: flex;
+            // border: 1px solid black;
+            height: 100%;
+            > li {
+              height: 100%;
+              line-height: 40px;
+              //   background-color: #db873d;
+
+              > .submenu {
+                // width: 440%;
+                // display: flex;
+                display: none;
+
+                // justify-content: space-between;
+                background-color: rgb(79, 141, 179);
+
+                > ul {
+                  width: 100%;
+                  > li {
+                    width: 100%;
+                    a {
+                      color: rgb(233, 240, 245);
+                    }
+                  }
+                }
+                > div {
+                  //   width: 30%;
+                  font-size: 20px;
+                }
+              }
+
+              > a {
+                display: flex;
+                padding: 0 10px;
+                border-right: 1px solid gray;
+              }
+            }
+          }
+        }
+      }
+    }
+    > img {
+      margin: 7px 45px;
+      margin-left: 0;
+    }
+  }
+  > .slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    > div {
+      width: 100%;
+      height: 100%;
+      // position: absolute;
+      // top: 0;left: 0;
+      // opacity: 0;
+      background-image: url(./img/slidebar/8241907f1a__42c9fbe7e9.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+      border-top: 5px solid red;
+      border-bottom: 7px solid rgb(17, 82, 112);
+    }
+    > .social {
+      position: fixed;
+      top: 27%;
+      left: 0%;
+      width: 60px;
+      height: 180px;
+      background-image: none;
+      z-index: 777;
+      border-top: none;
+      border-bottom: none;
+      > ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        > li {
+          width: 65%;
+          height: 16.8%;
+          transition: .4s;
+          &:nth-of-type(1) {
+            background-color: rgb(202, 0, 93);
+          }
+          &:nth-of-type(2) {
+            background-color: rgb(234, 93, 29);
+          }
+          &:nth-of-type(3) {
+            background-color: rgb(0, 119, 173);
+          }
+          &:nth-of-type(4) {
+            background-color: rgb(59, 130, 144);
+          }
+          &:nth-of-type(5) {
+            background-color: rgb(245, 190, 0);
+          }
+          &:nth-of-type(6) {
+            background-color: rgb(124, 176, 164);
+          }
+          &:hover{
+            width: 75%;
+            // background-color: #fff;
+          }
+          > a {
+            font-size: 16px;
+            color: white;
+            width: 100%;
+            height: 100%;
+            line-height: 45px;
+            padding-right: 13px;
+            >img{
+              color: white;
+              width: 20px;
+              object-fit: cover;
+              // display: flex;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .cards {
+    width: 100%;
+    height: 500px;
+    // margin-top: 70px;
+    > .txt {
+      width: 100%;
+      height: 300px;
+      background-color: rgb(0, 114, 198);
+      margin-top: 270px;
+      position: relative;
+      > .card {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        > figure {
+          width: 25%;
+          height: 200px;
+          position: relative;
+          &::after {
+            content: "";
+            display: flex;
+            position: absolute;
+            top: 100%;
+            left: 35%;
+            transform: translate(10%, 3%);
+            width: 0px;
+            height: 0px;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 30px solid rgb(249, 239, 221);
+            z-index: 9;
+          }
+          > img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            position: relative;
+          }
+          > figcaption {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(0, 84, 162);
+            > ul {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              padding: 20px 30px;
+              > li {
+                width: 100%;
+                list-style-type: disc;
+                font-size: 13px;
+                color: white;
+                > a {
+                  color: white;
+                  font-size: 1.3rem;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > .news {
+    width: 100%;
+    height: 300px;
+    margin-top: -200px;
+    background-image: url(./img/page-background.png);
+    > h2 {
+      padding: 20px 30px;
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    > .total {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      > .title {
+        width: 30%;
+        height: 100%;
+        margin-right: 5px;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        > * {
+          width: 100%;
+        }
+        &:before{
+          content: '\201C';
+          display: flex;
+          position: absolute;
+          top: 10%;left: 88%;
+          font-size: 50px;
+          // font-family: IRANSans;
+        }
+
+        > .continu {
+          height: 80%;
+          > p {
+            width: 85%;
+            height: 50%;
+            > a {
+              font-size: 1.3rem;
+              color: black;
+              height: 100%;
+              width: 100%;
+              display: block;
+              line-height: 20px;
+              transition: 0.4s;
+            }
+          }
+          > span {
+            display: flex;
+            width: 100%;
+            height: 50%;
+            padding: 35px 40px;
+            font-size: 15px;
+            transition: 0.4s;
+            > * {
+              transition: 0.4s;
+            }
+            > a {
+              padding-right: 7px;
+              font-size: 1.3rem;
+              color: black;
+              height: 100%;
+              width: 100%;
+              display: block;
+              transition: 0.4s;
+              font-weight: bold;
+              text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+            }
+          }
+          > span:nth-of-type(1) {
+            opacity: 0;
+            margin-top: -80px;
+            transition: 0.4s;
+          }
+          &:hover > p > a {
+            color: var(--color-secondary);
+          }
+          &:hover > span {
+            opacity: 0;
+          }
+          &:hover > span:nth-of-type(2) {
+            opacity: 1;
+          }
+          &:hover > span:nth-of-type(2) > a,
+          &:hover > span:nth-of-type(2) > i {
+            color: blue;
+            transform: translateY(-10px);
+          }
+        }
+        > figure > img {
+          border-radius: 50%;
+          transform: translate(-240%, -120%);
+          box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.533);
+        }
+      }
+      > .title:nth-of-type(2) {
+        > .continu {
+          > p > a {
+            word-spacing: 5px;
+          }
+        }
+        > figure {
+          width: 100px;
+          height: 100px;
+
+          > img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 0 8px white;
+          }
+        }
+      }
+      > .title:nth-of-type(3) {
+        > .continu {
+          > p > a {
+            word-spacing: 5px;
+          }
+        }
+        > figure {
+          width: 100px;
+          height: 100px;
+
+          > img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 0 8px white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,386 @@
+@charset "UTF-8";
+main {
+  width: 100%;
+  height: 100vh;
+}
+main > header {
+  height: 100px;
+  display: flex;
+}
+main > header > .head {
+  width: 80%;
+  height: 100%;
+}
+main > header > .head > .top-header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+}
+main > header > .head > .top-header > * {
+  padding-top: 10px;
+}
+main > header > .head > .top-header > .left {
+  width: 40%;
+}
+main > header > .head > .top-header > .left > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+}
+main > header > .head > .top-header > .left > ul > li {
+  padding: 0 7px;
+  margin: 5px;
+  color: #db873d;
+}
+main > header > .head > .top-header > .left > ul > li:nth-of-type(3), main > header > .head > .top-header > .left > ul > li:nth-of-type(4) {
+  border-right: 1px solid #db873d;
+}
+main > header > .head > .top-header > .left > ul > li > a {
+  color: var(--color-accet);
+}
+main > header > .head > .top-header > .middle {
+  margin: 0 60px;
+  padding: 0;
+}
+main > header > .head > .top-header > .right {
+  width: 45%;
+}
+main > header > .head > .top-header > .right > .search {
+  display: flex;
+}
+main > header > .head > .top-header > .right > .search > input {
+  width: 90%;
+  height: 27px;
+  margin-right: 20px;
+  padding-right: 10px;
+  position: relative;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.612);
+  transition: 0.4s;
+  caret-color: rgba(70, 64, 64, 0.824);
+}
+main > header > .head > .top-header > .right > .search > input:hover {
+  box-shadow: 0 0 7px var(--color-accet);
+}
+main > header > .head > .top-header > .right > .search > i {
+  position: absolute;
+  right: 42%;
+  margin-top: 7px;
+  font-size: 15px;
+  color: var(--color-accet);
+}
+main > header > .head > .bottom-header {
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main > header > .head > .bottom-header > .apps {
+  display: flex;
+}
+main > header > .head > .bottom-header > .apps > img {
+  padding: 7px;
+}
+main > header > .head > .bottom-header > .titr {
+  width: 70%;
+  height: 40px;
+}
+main > header > .head > .bottom-header > .titr > ul {
+  display: flex;
+  height: 100%;
+}
+main > header > .head > .bottom-header > .titr > ul > li {
+  height: 100%;
+  line-height: 40px;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu {
+  display: none;
+  background-color: rgb(79, 141, 179);
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > ul {
+  width: 100%;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > ul > li {
+  width: 100%;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > ul > li a {
+  color: rgb(233, 240, 245);
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > div {
+  font-size: 20px;
+}
+main > header > .head > .bottom-header > .titr > ul > li > a {
+  display: flex;
+  padding: 0 10px;
+  border-right: 1px solid gray;
+}
+main > header > img {
+  margin: 7px 45px;
+  margin-left: 0;
+}
+main > .slider {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+main > .slider > div {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/slidebar/8241907f1a__42c9fbe7e9.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-top: 5px solid red;
+  border-bottom: 7px solid rgb(17, 82, 112);
+}
+main > .slider > .social {
+  position: fixed;
+  top: 27%;
+  left: 0%;
+  width: 60px;
+  height: 180px;
+  background-image: none;
+  z-index: 777;
+  border-top: none;
+  border-bottom: none;
+}
+main > .slider > .social > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+main > .slider > .social > ul > li {
+  width: 65%;
+  height: 16.8%;
+  transition: 0.4s;
+}
+main > .slider > .social > ul > li:nth-of-type(1) {
+  background-color: rgb(202, 0, 93);
+}
+main > .slider > .social > ul > li:nth-of-type(2) {
+  background-color: rgb(234, 93, 29);
+}
+main > .slider > .social > ul > li:nth-of-type(3) {
+  background-color: rgb(0, 119, 173);
+}
+main > .slider > .social > ul > li:nth-of-type(4) {
+  background-color: rgb(59, 130, 144);
+}
+main > .slider > .social > ul > li:nth-of-type(5) {
+  background-color: rgb(245, 190, 0);
+}
+main > .slider > .social > ul > li:nth-of-type(6) {
+  background-color: rgb(124, 176, 164);
+}
+main > .slider > .social > ul > li:hover {
+  width: 75%;
+}
+main > .slider > .social > ul > li > a {
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  padding-right: 13px;
+}
+main > .slider > .social > ul > li > a > img {
+  color: white;
+  width: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+}
+main > .cards {
+  width: 100%;
+  height: 500px;
+}
+main > .cards > .txt {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(0, 114, 198);
+  margin-top: 270px;
+  position: relative;
+}
+main > .cards > .txt > .card {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+main > .cards > .txt > .card > figure {
+  width: 25%;
+  height: 200px;
+  position: relative;
+}
+main > .cards > .txt > .card > figure::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  transform: translate(10%, 3%);
+  width: 0px;
+  height: 0px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid rgb(249, 239, 221);
+  z-index: 9;
+}
+main > .cards > .txt > .card > figure > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+main > .cards > .txt > .card > figure > figcaption {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(0, 84, 162);
+}
+main > .cards > .txt > .card > figure > figcaption > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+}
+main > .cards > .txt > .card > figure > figcaption > ul > li {
+  width: 100%;
+  list-style-type: disc;
+  font-size: 13px;
+  color: white;
+}
+main > .cards > .txt > .card > figure > figcaption > ul > li > a {
+  color: white;
+  font-size: 1.3rem;
+}
+main > .cards > .txt > .card > figure > figcaption > ul > li > a:hover {
+  text-decoration: underline;
+}
+main > .news {
+  width: 100%;
+  height: 300px;
+  margin-top: -200px;
+  background-image: url(./img/page-background.png);
+}
+main > .news > h2 {
+  padding: 20px 30px;
+  font-size: 1.8rem;
+  width: 100%;
+}
+main > .news > .total {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+main > .news > .total > .title {
+  width: 30%;
+  height: 100%;
+  margin-right: 5px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+main > .news > .total > .title > * {
+  width: 100%;
+}
+main > .news > .total > .title:before {
+  content: "“";
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 88%;
+  font-size: 50px;
+}
+main > .news > .total > .title > .continu {
+  height: 80%;
+}
+main > .news > .total > .title > .continu > p {
+  width: 85%;
+  height: 50%;
+}
+main > .news > .total > .title > .continu > p > a {
+  font-size: 1.3rem;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: block;
+  line-height: 20px;
+  transition: 0.4s;
+}
+main > .news > .total > .title > .continu > span {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  padding: 35px 40px;
+  font-size: 15px;
+  transition: 0.4s;
+}
+main > .news > .total > .title > .continu > span > * {
+  transition: 0.4s;
+}
+main > .news > .total > .title > .continu > span > a {
+  padding-right: 7px;
+  font-size: 1.3rem;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  font-weight: bold;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+main > .news > .total > .title > .continu > span:nth-of-type(1) {
+  opacity: 0;
+  margin-top: -80px;
+  transition: 0.4s;
+}
+main > .news > .total > .title > .continu:hover > p > a {
+  color: var(--color-secondary);
+}
+main > .news > .total > .title > .continu:hover > span {
+  opacity: 0;
+}
+main > .news > .total > .title > .continu:hover > span:nth-of-type(2) {
+  opacity: 1;
+}
+main > .news > .total > .title > .continu:hover > span:nth-of-type(2) > a, main > .news > .total > .title > .continu:hover > span:nth-of-type(2) > i {
+  color: blue;
+  transform: translateY(-10px);
+}
+main > .news > .total > .title > figure > img {
+  border-radius: 50%;
+  transform: translate(-240%, -120%);
+  box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.533);
+}
+main > .news > .total > .title:nth-of-type(2) > .continu > p > a {
+  word-spacing: 5px;
+}
+main > .news > .total > .title:nth-of-type(2) > figure {
+  width: 100px;
+  height: 100px;
+}
+main > .news > .total > .title:nth-of-type(2) > figure > img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 8px white;
+}
+main > .news > .total > .title:nth-of-type(3) > .continu > p > a {
+  word-spacing: 5px;
+}
+main > .news > .total > .title:nth-of-type(3) > figure {
+  width: 100px;
+  height: 100px;
+}
+main > .news > .total > .title:nth-of-type(3) > figure > img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 8px white;
+}/*# sourceMappingURL=mainStyle.css.map */
