@@ -95,34 +95,63 @@ main {
           height: 40px;
           > ul {
             display: flex;
-            // border: 1px solid black;
+            justify-content: flex-start;
+            border: 1px solid black;
             height: 100%;
             > li {
               height: 100%;
               line-height: 40px;
-              //   background-color: #db873d;
+              // border: 1px solid blue;
+              // background-color: rgb(79, 141, 179);
 
               > .submenu {
-                width: 440%;
-                height: 30%;
-                // display: flex;
-                display: none;
-
-                // justify-content: space-between;
+                width: 210%;
+                display: flex;
+                position: relative;
+                z-index: 9;
+                margin-top: -2px;
                 background-color: rgb(79, 141, 179);
+                >div{
+                  // border: 1px solid purple;
+                  width: 35%;
+                }
+           
+                >.col1,
+                .col2,
+                .col3{
+                  // border: 1px solid red;
+                  padding-right: 3%;
+                  >.colTop{
+                    // border: 1px solid green;
+                    display: flex;
+                    >img{
+                      object-fit: contain;
 
-                > ul {
-                  width: 100%;
-                  > li {
-                    width: 100%;
-                    a {
-                      color: rgb(233, 240, 245);
+                    }
+                    >h4{
+                      color: rgb(170, 199, 218);
+                      padding-right: 4%;
+                      font-size: 1.3rem;
+                    }
+
+                  }
+                  >ul{
+                    // border: 1px solid red;
+                    >li{
+                      // border: 1px solid white;
+                      line-height: 25px;
+
+                      >a{
+                        color: rgb(214, 217, 238);
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                      }
                     }
                   }
                 }
-                > div {
-                  //   width: 30%;
-                  font-size: 20px;
+                >.col2,
+                .col3{
+                  padding-right: 0;
                 }
               }
 
@@ -438,8 +467,9 @@ main {
       display: flex;
       flex-wrap: wrap;
       align-content: flex-start;
-      
-      > .links,.link{
+
+      > .links,
+      .link {
         width: 90%;
         display: flex;
         height: 250px;
@@ -470,28 +500,26 @@ main {
           }
         }
       }
-      >.link{
-
+      > .link {
         display: none;
-       >div{
-        >ul{
-          width: 200%;
-          margin-top: 10px;
-          >li{
-            width: 100%;
-            padding: 5px 0;
-            >a{
-              display: flex;
-            width: 100%;
-            color: rgb(6, 103, 136);
-            font-family: inherit;
+        > div {
+          > ul {
+            width: 200%;
+            margin-top: 10px;
+            > li {
+              width: 100%;
+              padding: 5px 0;
+              > a {
+                display: flex;
+                width: 100%;
+                color: rgb(6, 103, 136);
+                font-family: inherit;
+              }
             }
           }
         }
-       }
-        
       }
-   
+
       > h4 {
         width: 20%;
         height: 50px;
@@ -518,16 +546,16 @@ main {
             border: 1px solid white;
           }
         }
-        &:nth-of-type(1):hover ~ div>div:nth-of-type(1){
+        &:nth-of-type(1):hover ~ div > div:nth-of-type(1) {
           display: none;
           flex-wrap: wrap;
           width: 100%;
         }
-        &:nth-of-type(2):hover ~ .links{
+        &:nth-of-type(2):hover ~ .links {
           display: none;
           border: 10px solid red;
         }
-        &:nth-of-type(2):hover ~ .link{
+        &:nth-of-type(2):hover ~ .link {
           display: flex;
           flex-wrap: wrap;
         }

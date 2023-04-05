@@ -87,6 +87,8 @@ main > header > .head > .bottom-header > .titr {
 }
 main > header > .head > .bottom-header > .titr > ul {
   display: flex;
+  justify-content: flex-start;
+  border: 1px solid black;
   height: 100%;
 }
 main > header > .head > .bottom-header > .titr > ul > li {
@@ -94,22 +96,54 @@ main > header > .head > .bottom-header > .titr > ul > li {
   line-height: 40px;
 }
 main > header > .head > .bottom-header > .titr > ul > li > .submenu {
-  width: 440%;
-  height: 30%;
-  display: none;
+  width: 210%;
+  display: flex;
+  position: relative;
+  z-index: 9;
+  margin-top: -2px;
   background-color: rgb(79, 141, 179);
 }
-main > header > .head > .bottom-header > .titr > ul > li > .submenu > ul {
-  width: 100%;
-}
-main > header > .head > .bottom-header > .titr > ul > li > .submenu > ul > li {
-  width: 100%;
-}
-main > header > .head > .bottom-header > .titr > ul > li > .submenu > ul > li a {
-  color: rgb(233, 240, 245);
-}
 main > header > .head > .bottom-header > .titr > ul > li > .submenu > div {
-  font-size: 20px;
+  width: 35%;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col1,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col2,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 {
+  padding-right: 3%;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col1 > .colTop,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col2 > .colTop,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 > .colTop {
+  display: flex;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col1 > .colTop > img,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col2 > .colTop > img,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 > .colTop > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col1 > .colTop > h4,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col2 > .colTop > h4,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 > .colTop > h4 {
+  color: rgb(170, 199, 218);
+  padding-right: 4%;
+  font-size: 1.3rem;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col1 > ul > li,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col2 > ul > li,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 > ul > li {
+  line-height: 25px;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col1 > ul > li > a,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col2 > ul > li > a,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 > ul > li > a {
+  color: rgb(214, 217, 238);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+main > header > .head > .bottom-header > .titr > ul > li > .submenu > .col2,
+main > header > .head > .bottom-header > .titr > ul > li > .submenu .col3 {
+  padding-right: 0;
 }
 main > header > .head > .bottom-header > .titr > ul > li > a {
   display: flex;
@@ -402,31 +436,37 @@ main > .sidebar .right {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-main > .sidebar .right > .links, main > .sidebar .right .link {
+main > .sidebar .right > .links,
+main > .sidebar .right .link {
   width: 90%;
   display: flex;
   height: 250px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-main > .sidebar .right > .links > div, main > .sidebar .right .link > div {
+main > .sidebar .right > .links > div,
+main > .sidebar .right .link > div {
   width: 32%;
   margin-top: 9px;
 }
-main > .sidebar .right > .links > div > ul > li:last-child, main > .sidebar .right .link > div > ul > li:last-child {
+main > .sidebar .right > .links > div > ul > li:last-child,
+main > .sidebar .right .link > div > ul > li:last-child {
   width: 150%;
 }
-main > .sidebar .right > .links > div > ul > li > a, main > .sidebar .right .link > div > ul > li > a {
+main > .sidebar .right > .links > div > ul > li > a,
+main > .sidebar .right .link > div > ul > li > a {
   display: flex;
   margin-top: 7px;
   font-weight: bold;
   transition: 0.4s;
 }
-main > .sidebar .right > .links > div > ul > li > a:hover, main > .sidebar .right .link > div > ul > li > a:hover {
+main > .sidebar .right > .links > div > ul > li > a:hover,
+main > .sidebar .right .link > div > ul > li > a:hover {
   color: rgba(8, 125, 86, 0.794);
   text-decoration: underline;
 }
-main > .sidebar .right > .links > div > ul > li > a > img, main > .sidebar .right .link > div > ul > li > a > img {
+main > .sidebar .right > .links > div > ul > li > a > img,
+main > .sidebar .right .link > div > ul > li > a > img {
   padding-left: 5px;
 }
 main > .sidebar .right > .link {
