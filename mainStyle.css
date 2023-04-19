@@ -87,8 +87,9 @@ main > header > .head > .bottom-header > .titr {
 }
 main > header > .head > .bottom-header > .titr > ul {
   display: flex;
-  justify-content: flex-start;
+  background-color: red;
   height: 100%;
+  width: 80%;
 }
 main > header > .head > .bottom-header > .titr > ul > li {
   height: 100%;
@@ -106,8 +107,13 @@ main > header > .head > .bottom-header > .titr > ul > li:hover > a {
 main > header > .head > .bottom-header > .titr > ul > li:hover > .submenu {
   display: grid;
 }
+main > header > .head > .bottom-header > .titr > ul > li:hover {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 main > header > .head > .bottom-header > .titr > ul > li > .submenu {
-  width: 210%;
+  width: 800%;
   display: grid;
   position: relative;
   display: none;

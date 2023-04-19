@@ -95,10 +95,13 @@ main {
           height: 40px;
           > ul {
             display: flex;
-            justify-content: flex-start;
+            background-color: red;
+            // justify-content: flex-start;
             height: 100%;
+            width:80%;
             > li {
               height: 100%;
+              // width: fit-content;
               line-height: 40px;
               &:nth-of-type(2){
                 >.submenu{
@@ -114,11 +117,14 @@ main {
               &:hover > .submenu {
                 display: grid;
               }
+              &:hover{
+                width: fit-content;
+              }
               // border: 1px solid blue;
               // background-color: rgb(79, 141, 179);
 
               > .submenu {
-                width: 210%;
+                width: 800%;
                 display: grid;
                 position: relative;
                 display: none;
