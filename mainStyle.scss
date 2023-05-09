@@ -95,7 +95,6 @@ main {
           height: 40px;
           > ul {
             display: flex;
-            background-color: red;
             // justify-content: flex-start;
             height: 100%;
             width:80%;
@@ -103,6 +102,7 @@ main {
               height: 100%;
               // width: fit-content;
               line-height: 40px;
+              position: relative;
               &:nth-of-type(2){
                 >.submenu{
                   grid-template-rows: repeat(7, 1fr);
@@ -124,9 +124,9 @@ main {
               // background-color: rgb(79, 141, 179);
 
               > .submenu {
-                width: 800%;
+                width: 1000px;
                 display: grid;
-                position: relative;
+                position: absolute;
                 display: none;
                 z-index: 9;
                 margin-top: -2px;

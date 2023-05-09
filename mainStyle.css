@@ -87,13 +87,13 @@ main > header > .head > .bottom-header > .titr {
 }
 main > header > .head > .bottom-header > .titr > ul {
   display: flex;
-  background-color: red;
   height: 100%;
   width: 80%;
 }
 main > header > .head > .bottom-header > .titr > ul > li {
   height: 100%;
   line-height: 40px;
+  position: relative;
 }
 main > header > .head > .bottom-header > .titr > ul > li:nth-of-type(2) > .submenu {
   grid-template-rows: repeat(7, 1fr);
@@ -113,9 +113,9 @@ main > header > .head > .bottom-header > .titr > ul > li:hover {
   width: fit-content;
 }
 main > header > .head > .bottom-header > .titr > ul > li > .submenu {
-  width: 800%;
+  width: 1000px;
   display: grid;
-  position: relative;
+  position: absolute;
   display: none;
   z-index: 9;
   margin-top: -2px;
